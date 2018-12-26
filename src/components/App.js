@@ -4,9 +4,10 @@ import ImageList from './ImageList';
 import unsplash from '../api/unsplash';;
 
 class App extends Component {
+    //images is initialized as an empty array so we can call array methods (map method) on it in the ImageList component
     state = { images: [] };
 
-     onSearchSubmit = async(term) => {
+     onSearchSubmit = async (term) => {
         const response = await unsplash.get('/search/photos', {
             params: { query: term },
         });
