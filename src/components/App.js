@@ -1,9 +1,7 @@
 import React, {Component} from 'react';
 import SearchBar from './SearchBar';
 import ImageList from './ImageList';
-import unsplash from '../api/unsplash';
-// import dotenv from 'dotenv';
-// dotenv.config();
+import unsplash from '../api/unsplash';;
 
 class App extends Component {
     state = { images: [] };

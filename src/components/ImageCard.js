@@ -1,3 +1,4 @@
+import './ImageCard.css';
 import React, {Component} from 'react';
 
 class ImageCard extends Component {
@@ -16,7 +17,7 @@ class ImageCard extends Component {
     setSpans = () => {
         const height = this.imageRef.current.clientHeight;
 
-        const spans = Math.ceil(height / 10);
+        const spans = Math.ceil(height / 10 + 4);
 
         this.setState({ spans });
     }
@@ -25,8 +26,9 @@ class ImageCard extends Component {
         const {description, urls} = this.props.image;
 
         return (
-            <div style={{ gridRowEnd: `span ${this.state.spans}` }}>
+            <div style={{ gridRowEnd: `span ${this.state.spans}` }} >
                 <img 
+                className="card"
                 alt={description} 
                 src={urls.regular}
                 ref={this.imageRef}
