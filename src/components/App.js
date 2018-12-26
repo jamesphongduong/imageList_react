@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import SearchBar from './SearchBar';
-import axios from '../api/unsplash';
+import ImageList from './ImageList';
+import unsplash from '../api/unsplash';
 // import dotenv from 'dotenv';
 // dotenv.config();
 
@@ -19,6 +20,7 @@ class App extends Component {
         return(
             <div className="ui container" style={{ marginTop: '10px' }} >
                 <SearchBar onSubmit={this.onSearchSubmit} />
+                <ImageList images={this.state.images} />
             </div>
         );
     }
