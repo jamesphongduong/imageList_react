@@ -24,6 +24,6 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "dot-env": "0.0.1"
+    "dotenv": "^6.2.0"
   }
 }
