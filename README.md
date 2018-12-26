@@ -1,4 +1,4 @@
-## Image List App
+# Image List App
 
 App that generate a list of 10 images based off the "search" word. 
 
@@ -19,7 +19,7 @@ Challenges: understanding the keyword "this" and debugging.
 
 Favorite Parts: Learning about the App Lifecycle via diagrams to allow a better understanding of each step.
 
-# How to download/run app
+## How to download/run app
 In terminal:
 * git clone https://github.com/jamesphongduong/todo_js.git
 * cd into new directory
